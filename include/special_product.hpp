@@ -1,7 +1,7 @@
 /****************************************************************************
  * Header file of Special Product. This file defines the basic data.
  *
- * Main contributer: hydai
+ * Main contributor: hydai
  ****************************************************************************/
 
 #ifndef SPECIAL_PRODUCT_HPP
@@ -23,16 +23,17 @@ class SpecialProduct {
     /* use the earn source mathod */
     friend class EarnSource;
     /* type of this specital product */
-    enum SpecailProduct type_of_SP;
+    enum SpecialProductType type_of_SP;
 
 public:
     /* constructor */
-    SpecailProduct(enum SpecialProductType );
-    /* distructor */
-    ~SpecailProduct(void);
+    SpecialProduct(enum SpecialProductType );
+    /* destructor */
+    ~SpecialProduct(void);
     /* get total number of the holdings */
     int getHoldingsNumber(void);
     /* get type name */
     const char* getTypeName(void);
-}
+};
+
 #endif

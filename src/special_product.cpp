@@ -1,6 +1,6 @@
 /****************************************************************************
- * Implement of the Special Product.
- * Main contributier: hydai
+ * Implementation of the Special Product.
+ * Main contributor: hydai
  ****************************************************************************/
 
 #include "../include/special_product.hpp"
@@ -13,12 +13,12 @@ SpecialProduct::SpecialProduct(enum SpecialProductType _type) {
     type_of_SP = _type;
 }
 
-/* distructor */
+/* destructor */
 SpecialProduct::~SpecialProduct(void) {
     this->num_holdings = 0;
 }
 
-const char* getTypeName(void) {
+const char* SpecialProduct::getTypeName(void) {
     switch (type_of_SP) {
     case 0:
         return "QUARRY";
@@ -33,6 +33,7 @@ const char* getTypeName(void) {
     }
     return "ERROR";
 }
+
 int SpecialProduct::getHoldingsNumber(void) {
     char *TypeName = new [strlen(getTypeName())+1];
     std::strcpy(TypeName, getTypeName());
