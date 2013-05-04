@@ -67,9 +67,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\special_product.hpp" />
     <ClInclude Include="..\include\worker.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\special_product.cpp" />
     <ClCompile Include="..\src\worker.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
