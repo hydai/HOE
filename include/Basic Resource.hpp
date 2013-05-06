@@ -45,10 +45,6 @@ public:
 
 
 
-
-    /*  : Use the  methods in the  class. */
-    friend class ;
-
 private:
     double GoldAmount;
 };
