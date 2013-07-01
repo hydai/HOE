@@ -6,26 +6,19 @@
 
 #ifndef SPECIAL_PRODUCT_HPP
 #define SPECIAL_PRODUCT_HPP 
-#include "CostFunction.hpp"
-
-enum SpecialProductType {
-	QUARRY,
-	IRON, 
-	CRYSTAL, 
-	SULFUR
-};
+//#include "CostFunction.hpp"
 
 class SpecialProduct {
-	/* number of the player have */
-	int num_holdings;
-	/* use the cost functions mathod */
-	friend class CostFunction;
-	/* use the earn source mathod */
-	friend class EarnSource;
-	/* type of this specital product */
-	enum SpecialProductType type_of_SP;
 
 public:
+	/* type define */
+	enum SpecialProductType {
+		QUARRY = 0,
+		IRON = 1, 
+		CRYSTAL = 2, 
+		SULFUR = 3
+	};
+
 	/* constructor */
 	SpecialProduct(enum SpecialProductType );
 	/* destructor */
@@ -34,6 +27,17 @@ public:
 	int getHoldingsNumber(void);
 	/* get type name */
 	const char* getTypeName(void);
+
+private:
+	
+	/* number of the player have */
+	int num_holdings;
+	/* use the cost functions mathod */
+	//friend class CostFunction;
+	/* use the earn source mathod */
+	//friend class EarnSource;
+	/* type of this specital product */
+	SpecialProductType type_of_SP;
 };
 
 #endif

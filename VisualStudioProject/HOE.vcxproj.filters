@@ -17,12 +17,24 @@
     <ClCompile Include="..\src\special_product.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="MainForTest.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\worker.hpp">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\include\special_product.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\player.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic Resource.hpp">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

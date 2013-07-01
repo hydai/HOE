@@ -3,12 +3,14 @@
  * Main contributor: hydai
  ****************************************************************************/
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "../include/special_product.hpp"
 #include <cstdio>
 #include <cstring>
 
 /* constructor */
-SpecialProduct::SpecialProduct(enum SpecialProductType _type) {
+SpecialProduct::SpecialProduct(SpecialProductType _type) {
 	this->num_holdings = 0;
 	type_of_SP = _type;
 }
@@ -35,8 +37,9 @@ const char* SpecialProduct::getTypeName(void) {
 }
 
 int SpecialProduct::getHoldingsNumber(void) {
-	char *TypeName = new [strlen(getTypeName())+1];
+	char *TypeName = new char[strlen(getTypeName())+1];
 	std::strcpy(TypeName, getTypeName());
 	std::printf("This is %s, and have %d\n", TypeName, num_holdings);
 	delete TypeName;
+	return num_holdings;
 }
