@@ -34,7 +34,7 @@ const char* getTypeName(void) {
     return "ERROR";
 }
 int SpecialProduct::getHoldingsNumber(void) {
-    char *TypeName = new [strlen(getTypeName())+1];
+    char *TypeName = new [std::strlen(getTypeName())+1];
     std::strcpy(TypeName, getTypeName());
     std::printf("This is %s, and have %d\n", TypeName, num_holdings);
     delete TypeName;

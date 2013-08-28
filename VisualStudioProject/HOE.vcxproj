@@ -67,10 +67,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\Basic Resource.hpp" />
+    <ClInclude Include="..\include\player.hpp" />
+    <ClInclude Include="..\include\special_product.hpp" />
     <ClInclude Include="..\include\worker.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\player.cpp" />
+    <ClCompile Include="..\src\special_product.cpp" />
     <ClCompile Include="..\src\worker.cpp" />
+    <ClCompile Include="MainForTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
