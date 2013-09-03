@@ -18,7 +18,7 @@ SpecialProduct::~SpecialProduct(void) {
     this->num_holdings = 0;
 }
 
-const char* getTypeName(void) {
+const char* SpecialProduct::getTypeName(void) {
     switch (type_of_SP) {
     case 0:
         return "QUARRY";
@@ -34,8 +34,5 @@ const char* getTypeName(void) {
     return "ERROR";
 }
 int SpecialProduct::getHoldingsNumber(void) {
-    char *TypeName = new [std::strlen(getTypeName())+1];
-    std::strcpy(TypeName, getTypeName());
-    std::printf("This is %s, and have %d\n", TypeName, num_holdings);
-    delete TypeName;
+	return this->num_holdings;
 }
