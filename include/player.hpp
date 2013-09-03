@@ -2,9 +2,20 @@
 //#include "Basic Resource.hpp"
 #include "special_product.hpp"
 
+namespace Player{
+
 class Player {
 public:
 	Player();
-	~Player();
-	void SetInfo();
+	// use default destructor
+	void setInfo();
+	void setName();
+
+	void getName();
+private:
+	char *playerName;
+
 };
+
+
+}

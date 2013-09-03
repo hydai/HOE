@@ -68,6 +68,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Basic Resource.hpp" />
+    <ClInclude Include="..\include\ConstValue.hpp" />
     <ClInclude Include="..\include\player.hpp" />
     <ClInclude Include="..\include\special_product.hpp" />
     <ClInclude Include="..\include\worker.hpp" />

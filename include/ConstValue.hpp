@@ -1,0 +1,1 @@
+const int MAX_NAME_LEN = 15;

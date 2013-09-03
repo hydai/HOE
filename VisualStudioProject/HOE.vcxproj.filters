@@ -37,5 +37,8 @@
     <ClInclude Include="..\include\Basic Resource.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\ConstValue.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
